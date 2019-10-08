@@ -5,12 +5,17 @@
 
 
 .frame1 {
-	opacity: 0;
+	// opacity: 1;
 }
 
 
 .t3a{
 	@include pos-scale(0, 10, .5);
+}
+
+.t3b{
+	position: absolute;
+	clip: rect(0px 600px 500px 0px);
 }
 
 
