@@ -27,7 +27,7 @@ function start() {
 	tl.from('.t3a', .5, { opacity: 0 }, 't3');
 	tl.from(['.logo_royal', '.logo_spot'], .3, { opacity: 0 });
 
-	tl.add('end', "+=3.2");
+	tl.add('end', "+=1.7");
 	tl.to('.logo_spot', .5, { y: "+=10", opacity: 0 }, 'end-=.2');
 	tl.to('.t3a', .3, { y: 0 }, "end");
 	tl.from('.cta', .5, { opacity: 0, y: "+=20" }, "end");

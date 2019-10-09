@@ -18,6 +18,18 @@
 	// clip: rect(0px 600px 500px 0px);
 }
 
+.logo_royal{
+	@include pos-scale(10, 0, .5);
+}
+
+.line_ver2{
+	@include pos-scale(7, 0, .5);
+}
+
+.t1{
+	@include pos-scale(4, 0, .5);
+}
+
 
 #banner{
 	font-size: 20px;
