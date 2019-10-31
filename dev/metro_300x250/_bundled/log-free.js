@@ -14,16 +14,29 @@ exports.size = size;
 },{}],2:[function(require,module,exports){
 'use strict';
 
-require('../../_common/js/common.js');
+var _commonJsCommonJs = require('../../_common/js/common.js');
+
+void 0;
 
 function start() {
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
+	var w = _commonJsCommonJs.size.w * 2;
+	var h = _commonJsCommonJs.size.h * 2;
 
-	tl.from('.logo_metro', .3, { opacity: 0 });
-	// tl.from('.line_hor', .5, { opacity: 0 })
-	tl.from('.logo_ls', .3, { opacity: 0 }, "+=.2");
-	tl.to(".f1", .35, { opacity: 0 }, '+=1.5');
+	var tl_border = new TimelineMax();
+
+	var BORDER_TIME = .2;
+	tl_border.from('.border_1', BORDER_TIME, { clip: 'rect(0px ' + w + 'px ' + h + 'px ' + w + 'px)', ease: Linear.easeNone });
+	tl_border.from('.border_2', BORDER_TIME, { clip: 'rect(' + h + 'px ' + h + 'px ' + w + 'px 0px)', ease: Linear.easeNone });
+	tl_border.from('.border_3', BORDER_TIME, { clip: 'rect(0px 0px ' + h + 'px 0px)', ease: Linear.easeNone });
+	tl_border.from('.border_4', BORDER_TIME, { clip: 'rect(0px ' + w + 'px 0px 0px)', ease: Linear.easeNone });
+
+	tl.add('start', .8);
+	tl.from('.logo_metro', .7, { opacity: 0 }, 'start');
+	tl.from('.line_hor', .7, { clip: 'rect(0px 0px ' + h + 'px 0px)', ease: Power2.easeOut }, 'start');
+	tl.from('.logo_ls', .3, { opacity: 0 });
+	tl.to(".f1", .35, { opacity: 0 }, '+=1.2');
 
 	tl.from('.t1', .5, { opacity: 0 }, '+=.3');
 

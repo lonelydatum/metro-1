@@ -238,4 +238,24 @@ sup {
   height: 250px;
 }
 
+.border_1 {
+  clip: rect(0px 600px 500px 0px);
+}
+
+.border_2 {
+  clip: rect(0px 600px 500px 0px);
+}
+
+.border_3 {
+  clip: rect(0px 600px 500px 0px);
+}
+
+.border_4 {
+  clip: rect(0px 600px 500px 0px);
+}
+
+.line_hor {
+  clip: rect(0px 600px 500px 0px);
+}
+
 /*# sourceMappingURL=main.css.map */
