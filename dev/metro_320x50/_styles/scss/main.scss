@@ -1,0 +1,48 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+.t3a{
+	@include pos-scale(0, 10, .5);
+}
+
+.t3b{
+	position: absolute;
+	clip: rect(0px 600px 500px 0px);
+}
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 320px;
+	height: 50px;
+}
+
+.border_1{
+	clip: rect(0px 600px 500px 0px);
+}
+
+.border_2{
+	clip: rect(0px 600px 500px 0px);
+}
+
+.border_3{
+	clip: rect(0px 600px 500px 0px);
+}
+
+.border_4{
+	clip: rect(0px 600px 500px 0px);
+}
+
+
+.line_hor{
+	clip: rect(0px 600px 500px 0px);
+}
