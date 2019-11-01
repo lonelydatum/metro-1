@@ -20,13 +20,14 @@ function start(){
 	
 
 
-	tl.add('start', .8)
+	
 	
 
-	tl.from('.logos', .3, { opacity: 0 } )
-	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.3')
+	tl.from('.logos', .3, { opacity: 0 }, "+=.5" )
 
-	tl.from('.t1', .5, { opacity: 0 }, '+=.3')
+	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.1')
+	tl.from('.t1', .5, { opacity: 0 }, '+=.1')
+	
 
 	tl.to('.t1', .3, { opacity: 0 }, '+=2')
 

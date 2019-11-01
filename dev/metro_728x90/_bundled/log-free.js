@@ -32,12 +32,10 @@ function start() {
 	tl_border.from('.border_3', BORDER_TIME, { clip: 'rect(0px 0px ' + h + 'px 0px)', ease: Linear.easeNone });
 	tl_border.from('.border_4', BORDER_TIME, { clip: 'rect(0px ' + w + 'px 0px 0px)', ease: Linear.easeNone });
 
-	tl.add('start', .8);
+	tl.from('.logos', .3, { opacity: 0 }, "+=.5");
 
-	tl.from('.logos', .3, { opacity: 0 });
-	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.3');
-
-	tl.from('.t1', .5, { opacity: 0 }, '+=.3');
+	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.1');
+	tl.from('.t1', .5, { opacity: 0 }, '+=.1');
 
 	tl.to('.t1', .3, { opacity: 0 }, '+=2');
 
