@@ -34,7 +34,7 @@ function start(){
 
 	tl.from('.t2', .5, { opacity: 0 })
 	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.3')
-	tl.to('.f2', .3, { opacity: 0 }, '+=3.3')
+	tl.to('.f2', .3, { opacity: 0 }, '+=3.4')
 
 
 
