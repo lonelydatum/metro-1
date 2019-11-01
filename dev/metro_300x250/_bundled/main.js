@@ -44,7 +44,7 @@ function start() {
 
 	tl.from('.t2', .5, { opacity: 0 });
 	tl.from('.logo_royal', .5, { opacity: 0 }, '+=.3');
-	tl.to('.f2', .3, { opacity: 0 }, '+=4');
+	tl.to('.f2', .3, { opacity: 0 }, '+=3.5');
 
 	tl.from('.logos', .3, { opacity: 0 });
 
