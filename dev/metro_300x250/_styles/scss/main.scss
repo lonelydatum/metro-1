@@ -46,3 +46,7 @@
 .line_hor{
 	clip: rect(0px 600px 500px 0px);
 }
+
+.logo_royal{
+	@include pos-scale(0, 18, .5);
+}
